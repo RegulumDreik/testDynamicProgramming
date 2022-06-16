@@ -29,9 +29,9 @@ def pack_backpack_greedy(info_list, max_weight):
 if __name__ == '__main__':
     input()
     max_weight = int(input())
-    weight_list = input().split(' ')
+    weight_list = input().strip().split(' ')
     weight_list = [int(weight) for weight in weight_list]
-    cost_list = input().split(' ')
+    cost_list = input().strip().split(' ')
     cost_list = [int(cost) for cost in cost_list]
     combined_list = combine_weight_cost(weight_list, cost_list)
     result_backpack = pack_backpack_greedy(combine_weight_cost(weight_list, cost_list), max_weight)
